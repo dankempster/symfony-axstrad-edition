@@ -8,6 +8,16 @@ framework:
     profiler:
         collect: false
 
+doctrine:
+    dbal:
+        driver:   pdo_sqlite
+        host:     ~
+        port:     ~
+        dbname:   ~
+        user:     ~
+        password: Z
+        path:     "%kernel.root_dir%/data/test.db3"
+
 web_profiler:
     toolbar: false
     intercept_redirects: false
