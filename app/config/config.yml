@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: services.yml }
 
 framework:
     #esi:             ~
@@ -90,6 +91,7 @@ stof_doctrine_extensions:
     orm:
         default:
             sluggable: true # Required by AxstradPageBundle
+            timestampable: true
 
 ## Symfony SEO Bundle : extends Sonata SEO Bundle
 # required by AxstradSeoBundle

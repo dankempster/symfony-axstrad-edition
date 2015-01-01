@@ -1,0 +1,13 @@
+parameters:
+    frequence_web_contact.model.class: AppBundle\Entity\Contact
+
+services:
+    app.listener.contact_listener:
+        class: AppBundle\EventListener\ContactListener
+        arguments:
+            - @doctrine.orm.entity_manager
+        tags:
+            -
+                name: kernel.event_listener
+                event: contact.submit
+                method: onSubmit
