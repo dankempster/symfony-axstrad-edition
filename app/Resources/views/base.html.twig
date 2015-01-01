@@ -17,15 +17,23 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        <header>
-            <h1>Symfony Axstrad Edition</h1>
-        </header>
+        <div class="page_top">
+            <div class="header_outer">
+                <header class="header">
+                    <h1>Symfony Axstrad Edition</h1>
+                </header>
+            </div>
 
-        <main>{% block body %}{% endblock %}</main>
+            <main class="body">{% block body %}{% endblock %}</main>
 
-        <footer>
-            <p>&copy; 2015 Dan Kempster</p>
-        </footer>
+            <div class="footer_placeholder"></div>
+        </div>
+
+        <duv class="page_bottom">
+            <footer class="footer">
+                <p>&copy; 2015 Dan Kempster</p>
+            </footer>
+        </duv>
 
         {% block javascripts %}{% endblock %}
     </body>

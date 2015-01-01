@@ -1,0 +1,27 @@
+@mixin pseudoBlock($absolute: false, $top: false, $right: false, $bottom: false, $left: false)
+{
+    & {
+        content: " ";
+        display: block;
+
+        @if $absolute != false {
+            position: absolute;
+        }
+
+        @if $top != false {
+            top: $top;
+        }
+
+        @if $right != false {
+            right: $right;
+        }
+
+        @if $bottom != false {
+            bottom: $bottom;
+        }
+
+        @if $left != false {
+            left: $left;
+        }
+    }
+}

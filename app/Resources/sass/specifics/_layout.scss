@@ -1,0 +1,22 @@
+@import 'compass/layout';
+
+@include centreInnerBlock('.header_outer', '.header');
+@include centreBlock('.body');
+@include centreInnerBlock('.page_bottom', '.footer');
+@include sticky-footer(#{$footerHeight}px, '.page_top', '.footer_placeholder', '.page_bottom');
+
+.header_outer {
+    background: blue;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.body {
+    margin-top: 30px;
+}
+
+.page_bottom {
+    background: aqua;
+}

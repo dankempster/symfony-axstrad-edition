@@ -1,0 +1,61 @@
+
+@import 'base/utils/__utils';
+@import 'base/project/_variables';
+
+
+
+// ____ STRUCTURE ____ \\
+
+// Define component placeholders for component contents (no selector here)
+@include importOnce('centreBlock') {
+    @include _add(centreBlock) {
+        position: relative;
+        width: 100% !important;
+        min-width: #{$containerWidth}px;
+    }
+
+    @include _add(centreBlock-content) {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: #{$containerWidth}px;
+    }
+}
+
+
+// Map the placeholders content to some selectirs through a mixin
+@mixin centreBlock($selector:false)
+{
+    @if $selector == false {
+        & {
+            @include _use(centreBlock-content);
+        }
+    }
+    @else {
+        #{$selector} {
+            @include _use(centreBlock-content);
+        }
+    }
+
+}
+
+@mixin centreInnerBlock($selector:false, $innerSelector:"> div")
+{
+    @if $selector == false {
+        & {
+            @include _use(centreBlock);
+        }
+
+        & #{$innerSelector} {
+            @include _use(centreBlock-content);
+        }
+    }
+    @else {
+        #{$selector} {
+            @include _use(centreBlock);
+
+            & #{$innerSelector} {
+                @include _use(centreBlock-content);
+            }
+        }
+    }
+}
