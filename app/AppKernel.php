@@ -18,6 +18,18 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
+            // Doctrine Extensions
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Axstrad\Bundle\DoctrineExtensionsBundle\AxstradDoctrineExtensionsBundle(),
+
+            // Seo Bundles
+            new Sonata\SeoBundle\SonataSeoBundle(),
+            new Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
+            new Axstrad\Bundle\SeoBundle\AxstradSeoBundle(),
+
+            // Content Bundles
+            new Axstrad\Bundle\PageBundle\AxstradPageBundle,
+
             // Our App
             new AppBundle\AppBundle(),
 

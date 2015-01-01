@@ -54,6 +54,21 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
+        mappings:
+            axstrad_content: # Required by AxstradPageBundle
+                type: yml
+                prefix: Axstrad\Component\Content\Orm
+                dir: "%kernel.root_dir%/../vendor/axstrad/content/config/Orm"
+                alias: AxstradContent
+                is_bundle: false
+            CmfSeoBundle: # Required by AxstradSeoBundle
+                type: xml
+                prefix: Symfony\Cmf\Bundle\SeoBundle\Model
+                dir: Resources/config/doctrine-model
+        filters:
+            activatable: # Required by AxstradPageBundle
+                class: Axstrad\DoctrineExtensions\Activatable\Filter\OrmFilter
+                enabled: true
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -62,3 +77,39 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+## AxstradDoctrineExtensionsBundle
+axstrad_doctrine_extensions:
+    orm:
+        default:
+            activatable: true # Required by AxstradPageBundle
+
+## StofDoctrineExtensionsBundle
+stof_doctrine_extensions:
+    default_locale: %locale%
+    orm:
+        default:
+            sluggable: true # Required by AxstradPageBundle
+
+## Symfony SEO Bundle : extends Sonata SEO Bundle
+# required by AxstradSeoBundle
+cmf_seo:
+    content_key: document
+    persistence:
+        orm: true
+    # Standard page title
+    title: "%%content_title%% | %project_name%"
+
+## Sonata SEO Bundle
+# required by SymfonySEOBundle
+sonata_seo:
+    page:
+        title: %project_name%
+        metas:
+            name:
+                robots: "index, follow"
+            http-equiv:
+                'Content-Type': "text/html; charset=utf-8"
+                'X-Ua-Compatible': "IE=Edge"
+        head:
+            'xmlns': "http://www.w3.org/1999/xhtml"

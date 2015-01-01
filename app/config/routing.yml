@@ -1,3 +1,7 @@
 app:
     resource: @AppBundle/Controller/
     type:     annotation
+
+# Catch All: MUST be the last defined router
+axstrad_page:
+    resource: '@AxstradPageBundle/Resources/config/routing.yml'

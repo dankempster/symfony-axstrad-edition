@@ -4,8 +4,346 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d539bcb926a8b4359fc5f39a442f957e",
+    "hash": "63d19ebfa6f36a7aa2fb29dddf8cdb70",
     "packages": [
+        {
+            "name": "axstrad/common",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dankempster/axstrad-common.git",
+                "reference": "62010222923da6ad894d57b79e54e6753647b1d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dankempster/axstrad-common/zipball/62010222923da6ad894d57b79e54e6753647b1d5",
+                "reference": "62010222923da6ad894d57b79e54e6753647b1d5",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.4",
+                "php": ">=5.4",
+                "phpoption/phpoption": "~1.3"
+            },
+            "require-dev": {
+                "axstrad/test": "0.1.*",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev",
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axstrad\\Common\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Kempster",
+                    "email": "dev@dankempster.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Common classes used throughout Axstrad projects",
+            "time": "2014-12-30 02:01:31"
+        },
+        {
+            "name": "axstrad/content",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dankempster/axstrad-content.git",
+                "reference": "f7c5236a6c13a119a837c1336e077363e700aa70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dankempster/axstrad-content/zipball/f7c5236a6c13a119a837c1336e077363e700aa70",
+                "reference": "f7c5236a6c13a119a837c1336e077363e700aa70",
+                "shasum": ""
+            },
+            "require": {
+                "axstrad/common": "0.1.*",
+                "doctrine/common": "~2.3",
+                "php": "~5.4"
+            },
+            "require-dev": {
+                "axstrad/test": "0.1.*",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev",
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axstrad\\Component\\Content\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Kempster",
+                    "email": "dev@dankempster.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "axstrad",
+                "content"
+            ],
+            "time": "2014-12-30 22:14:57"
+        },
+        {
+            "name": "axstrad/doctrine-extensions",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dankempster/axstrad-doctrine-extensions.git",
+                "reference": "9e6d981b5a8c7302e0d96c8a1406a2ca781634b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dankempster/axstrad-doctrine-extensions/zipball/9e6d981b5a8c7302e0d96c8a1406a2ca781634b5",
+                "reference": "9e6d981b5a8c7302e0d96c8a1406a2ca781634b5",
+                "shasum": ""
+            },
+            "require": {
+                "gedmo/doctrine-extensions": "~2.3",
+                "php": "~5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev",
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axstrad\\DoctrineExtensions\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Kempster",
+                    "email": "dev@dankempster.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Extensions for Doctrine ORM",
+            "keywords": [
+                "axstrad",
+                "doctrine",
+                "extensions",
+                "orm"
+            ],
+            "time": "2014-12-31 13:31:14"
+        },
+        {
+            "name": "axstrad/doctrine-extensions-bundle",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dankempster/axstrad-doctrine-extensions-bundle.git",
+                "reference": "99799048e99f098448d5d2efce07e3bc78a99283"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dankempster/axstrad-doctrine-extensions-bundle/zipball/99799048e99f098448d5d2efce07e3bc78a99283",
+                "reference": "99799048e99f098448d5d2efce07e3bc78a99283",
+                "shasum": ""
+            },
+            "require": {
+                "axstrad/common": "0.1.*",
+                "axstrad/doctrine-extensions": "0.1.*",
+                "doctrine/doctrine-bundle": "~1",
+                "doctrine/orm": "~2.3",
+                "php": "~5.4",
+                "symfony/symfony": "~2.3"
+            },
+            "require-dev": {
+                "axstrad/test": "0.1.*",
+                "axstrad/test-bundle": "0.1.*",
+                "doctrine/doctrine-fixtures-bundle": "2.2.*",
+                "phpunit/phpunit": "~4.1",
+                "sensio/framework-extra-bundle": "~2.3 | ~3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev",
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axstrad\\Bundle\\DoctrineExtensionsBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Kempster",
+                    "email": "dev@dankempster.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Symfony 2 Bundle for Axstrad\\DoctrineExtensions",
+            "keywords": [
+                "Symfony Bundle",
+                "doctrine",
+                "extensions"
+            ],
+            "time": "2014-12-31 20:18:21"
+        },
+        {
+            "name": "axstrad/page-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dankempster/axstrad-page-bundle.git",
+                "reference": "a2a8257250543e9ca779d17167eed24f408fac5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dankempster/axstrad-page-bundle/zipball/a2a8257250543e9ca779d17167eed24f408fac5b",
+                "reference": "a2a8257250543e9ca779d17167eed24f408fac5b",
+                "shasum": ""
+            },
+            "require": {
+                "axstrad/content": "0.1.*",
+                "axstrad/doctrine-extensions-bundle": "0.1.*",
+                "axstrad/seo-bundle": "0.1.*",
+                "doctrine/doctrine-bundle": "~1",
+                "doctrine/orm": "~2.3",
+                "php": ">=5.4",
+                "stof/doctrine-extensions-bundle": "~1.1",
+                "symfony/symfony": "~2.3"
+            },
+            "require-dev": {
+                "axstrad/test": "0.1.*",
+                "axstrad/test-bundle": "0.1.*",
+                "burgov/key-value-form-bundle": "~1.1@dev",
+                "doctrine/doctrine-fixtures-bundle": "2.2.*",
+                "phpunit/phpunit": "~4.1",
+                "satooshi/php-coveralls": "dev-master",
+                "sensio/framework-extra-bundle": "~2.3",
+                "sonata-project/admin-bundle": "~2.3",
+                "sonata-project/core-bundle": "~2.2",
+                "sonata-project/doctrine-orm-admin-bundle": "2.3.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev",
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axstrad\\Bundle\\PageBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Kempster",
+                    "email": "dev@dankempster.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple (crude would be another word) Page bundle for Symfony 2",
+            "keywords": [
+                "axstrad",
+                "webpage"
+            ],
+            "time": "2015-01-01 15:50:30"
+        },
+        {
+            "name": "axstrad/seo-bundle",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dankempster/axstrad-seo-bundle.git",
+                "reference": "2d4f59830eb4b8742bc18e212fdc9997dd8dcad9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dankempster/axstrad-seo-bundle/zipball/2d4f59830eb4b8742bc18e212fdc9997dd8dcad9",
+                "reference": "2d4f59830eb4b8742bc18e212fdc9997dd8dcad9",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "~2.3",
+                "php": "~5.4",
+                "symfony-cmf/seo-bundle": "~1.1",
+                "symfony/symfony": "~2.3"
+            },
+            "require-dev": {
+                "axstrad/content": "0.1.*",
+                "axstrad/test": "0.1.*",
+                "axstrad/test-bundle": "0.1.*",
+                "doctrine/doctrine-fixtures-bundle": "2.2.*",
+                "phpunit/phpunit": "~4.1",
+                "sensio/framework-extra-bundle": "~2.3 | ~3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev",
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Axstrad\\Bundle\\SeoBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Kempster",
+                    "email": "dev@dankempster.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds Doctrine ORM support to Symfony-Cmf/SeoBundle",
+            "keywords": [
+                "axstrad",
+                "seo"
+            ],
+            "time": "2014-12-31 23:15:57"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.3",
@@ -848,6 +1186,86 @@
             "time": "2014-12-16 13:45:01"
         },
         {
+            "name": "gedmo/doctrine-extensions",
+            "version": "v2.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
+                "reference": "35adcaae1a3f50d0d5b73aa50ed8fd28ee35ce54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/35adcaae1a3f50d0d5b73aa50ed8fd28ee35ce54",
+                "reference": "35adcaae1a3f50d0d5b73aa50ed8fd28ee35ce54",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": ">=2.2,<2.5-dev",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/common": ">=2.4.0-RC3",
+                "doctrine/dbal": ">=2.4.0-RC1",
+                "doctrine/mongodb": ">=1.0.3",
+                "doctrine/mongodb-odm": ">=1.0.0-BETA9",
+                "doctrine/orm": ">=2.4.0-RC1",
+                "symfony/yaml": "2.3.1"
+            },
+            "suggest": {
+                "doctrine/dbal": ">=2.3.2",
+                "doctrine/mongodb": ">=1.0.1",
+                "doctrine/mongodb-odm": ">=1.0.0-BETA7",
+                "doctrine/orm": ">=2.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Gedmo\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Buchmann",
+                    "email": "david@liip.ch"
+                },
+                {
+                    "name": "Gediminas Morkevicius",
+                    "email": "gediminas.morkevicius@gmail.com"
+                },
+                {
+                    "name": "Gustavo Falco",
+                    "email": "comfortablynumb84@gmail.com"
+                }
+            ],
+            "description": "Doctrine2 behavioral extensions",
+            "homepage": "http://gediminasm.org/",
+            "keywords": [
+                "Blameable",
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "loggable",
+                "nestedset",
+                "sluggable",
+                "sortable",
+                "timestampable",
+                "translatable",
+                "tree",
+                "uploadable"
+            ],
+            "time": "2014-01-12 16:34:06"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.0",
             "target-dir": "Incenteev/ParameterHandler",
@@ -1093,6 +1511,55 @@
             "time": "2014-12-29 21:29:35"
         },
         {
+            "name": "phpoption/phpoption",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "5d099bcf0393908bf4ad69cc47dafb785d51f7f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/5d099bcf0393908bf4ad69cc47dafb785d51f7f5",
+                "reference": "5d099bcf0393908bf4ad69cc47dafb785d51f7f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PhpOption\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "time": "2014-01-09 22:37:17"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1276,6 +1743,192 @@
             "time": "2014-04-28 14:01:06"
         },
         {
+            "name": "sonata-project/exporter",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/exporter.git",
+                "reference": "8a88328ccdd1ca1471dd14483a4396350fbda91c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/8a88328ccdd1ca1471dd14483a4396350fbda91c",
+                "reference": "8a88328ccdd1ca1471dd14483a4396350fbda91c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "propel/propel1": "~1.6",
+                "symfony/property-access": "~2.2",
+                "symfony/routing": "*"
+            },
+            "suggest": {
+                "ext-curl": "*",
+                "propel/propel1": "~1.6",
+                "symfony/property-access": "~2.2",
+                "symfony/routing": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Exporter": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@gmail.com",
+                    "homepage": "http://sonata-project.org/"
+                }
+            ],
+            "description": "Lightweight Exporter library",
+            "homepage": "https://github.com/sonata-project/Exporter",
+            "keywords": [
+                "client",
+                "csv",
+                "data",
+                "export",
+                "xls"
+            ],
+            "time": "2014-09-11 09:05:40"
+        },
+        {
+            "name": "sonata-project/seo-bundle",
+            "version": "1.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataSeoBundle.git",
+                "reference": "b0ae33a121ab8beb2a517224b778d46fd50faca8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/b0ae33a121ab8beb2a517224b778d46fd50faca8",
+                "reference": "b0ae33a121ab8beb2a517224b778d46fd50faca8",
+                "shasum": ""
+            },
+            "require": {
+                "sonata-project/exporter": ">=1.2.2,<2.0",
+                "symfony/symfony": "~2.1",
+                "twig/twig": "*"
+            },
+            "require-dev": {
+                "guzzle/guzzle": "3.*",
+                "sonata-project/admin-bundle": "~2.2",
+                "sonata-project/block-bundle": "~2.2,>=2.2.7"
+            },
+            "suggest": {
+                "guzzle/guzzle": "3.*",
+                "knplabs/knp-menu-bundle": "Used by the BreadcrumbMenuBuilder",
+                "sonata-project/block-bundle": "Allows you to use SEO friendly blocks"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sonata\\SeoBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataSeoBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataSeoBundle",
+            "homepage": "http://sonata-project.org/bundles/seo",
+            "keywords": [
+                "seo",
+                "sonata"
+            ],
+            "time": "2014-08-13 08:07:54"
+        },
+        {
+            "name": "stof/doctrine-extensions-bundle",
+            "version": "v1.1.0",
+            "target-dir": "Stof/DoctrineExtensionsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
+                "reference": "0aa21137bcae43241ffa047946bbdd46b91a2b0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/0aa21137bcae43241ffa047946bbdd46b91a2b0a",
+                "reference": "0aa21137bcae43241ffa047946bbdd46b91a2b0a",
+                "shasum": ""
+            },
+            "require": {
+                "gedmo/doctrine-extensions": "2.3.*",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2.1"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "to use the ORM extensions",
+                "doctrine/mongodb-odm-bundle": "to use the MongoDB ODM extensions"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Stof\\DoctrineExtensionsBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                }
+            ],
+            "description": "Integration of the gedmo/doctrine-extensions with Symfony2",
+            "homepage": "https://github.com/stof/StofDoctrineExtensionsBundle",
+            "keywords": [
+                "behaviors",
+                "doctrine2",
+                "extensions",
+                "gedmo",
+                "loggable",
+                "nestedset",
+                "sluggable",
+                "sortable",
+                "timestampable",
+                "translatable",
+                "tree"
+            ],
+            "time": "2013-06-23 16:53:41"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.3.1",
             "source": {
@@ -1326,6 +1979,76 @@
                 "mailer"
             ],
             "time": "2014-12-05 14:17:14"
+        },
+        {
+            "name": "symfony-cmf/seo-bundle",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-cmf/SeoBundle.git",
+                "reference": "a6bd51b24842a16f2546988b1a6f6960ac1127ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony-cmf/SeoBundle/zipball/a6bd51b24842a16f2546988b1a6f6960ac1127ed",
+                "reference": "a6bd51b24842a16f2546988b1a6f6960ac1127ed",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "~1.0",
+                "php": ">=5.3.3",
+                "sonata-project/seo-bundle": "1.1.*",
+                "symfony/framework-bundle": "~2.3"
+            },
+            "require-dev": {
+                "burgov/key-value-form-bundle": "~1.0",
+                "doctrine/orm": "~2.4",
+                "doctrine/phpcr-bundle": "~1.1",
+                "doctrine/phpcr-odm": "~1.1",
+                "matthiasnoback/symfony-config-test": "0.*",
+                "matthiasnoback/symfony-dependency-injection-test": "0.*",
+                "sonata-project/doctrine-phpcr-admin-bundle": "~1.1",
+                "symfony-cmf/core-bundle": "~1.1",
+                "symfony-cmf/routing-bundle": "~1.2",
+                "symfony-cmf/testing": "~1.1"
+            },
+            "suggest": {
+                "burgov/key-value-form-bundle": "To edit the seo metadata 'extra' fields",
+                "doctrine/doctrine-bundle": "To persist the metadata in ORM entities",
+                "doctrine/orm": "To persist the metadata in ORM entities, ~2.4",
+                "doctrine/phpcr-bundle": "To persist the metadata in PHPCR ODM documents",
+                "sonata-project/doctrine-phpcr-admin-bundle": "To provide an admin extension for the seo metadata",
+                "symfony-cmf/core-bundle": "When using the provided PHPCR-ODM document",
+                "symfony-cmf/routing-bundle": "To make use of the alternate locale provider."
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Cmf\\Bundle\\SeoBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/SeoBundle/contributors"
+                }
+            ],
+            "description": "Symfony CMF Search Engine Optimization Bundle",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "Symfony CMF",
+                "seo"
+            ],
+            "time": "2014-10-21 08:17:18"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -2468,13 +3191,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "axstrad/page-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "doctrine/doctrine-migrations-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.4"
     },
     "platform-dev": []
 }
