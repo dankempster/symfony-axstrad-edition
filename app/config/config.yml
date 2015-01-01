@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: "%locale%" }
+    translator:      { fallback: "%locale%" }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -113,3 +113,10 @@ sonata_seo:
                 'X-Ua-Compatible': "IE=Edge"
         head:
             'xmlns': "http://www.w3.org/1999/xhtml"
+
+## FrequenceWebContactBundle
+frequence_web_contact:
+    send_mails: true                # True to use the bundle EmailListener that send emails when contact form is submited
+    to:         %contact_to%          # The contact mail recipient
+    from:       %contact_from%        # The contact mail sender
+    subject:    %contact_subject% # The contact mail subject translation key

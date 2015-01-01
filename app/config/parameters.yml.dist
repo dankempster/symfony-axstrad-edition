@@ -21,6 +21,11 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
+    # Contact info
+    contact_to: info@example.com
+    contact_from: no-reply@example.com
+    contact_subject: contact.message.new
+
     # Developer aids
     dev_email: ~
     dev_intercept_redirect: false

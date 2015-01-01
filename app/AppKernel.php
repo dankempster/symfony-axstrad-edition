@@ -27,10 +27,11 @@ class AppKernel extends Kernel
             new Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
             new Axstrad\Bundle\SeoBundle\AxstradSeoBundle(),
 
-            // Content Bundles
+            // App Features
             new Axstrad\Bundle\PageBundle\AxstradPageBundle,
+            new FrequenceWeb\Bundle\ContactBundle\FrequenceWebContactBundle(),
 
-            // Our App
+            // App Bundle
             new AppBundle\AppBundle(),
 
             // Deployment tools

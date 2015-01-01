@@ -2,6 +2,20 @@ app:
     resource: @AppBundle/Controller/
     type:     annotation
 
+## Contavt page
+fw_contact_index:
+    path:      /contact
+    defaults:
+        _controller: frequence_web_contact.default_controller:indexAction
+    methods: [GET]
+
+fw_contact_submit:
+    path:      /contact
+    defaults:
+        _controller: frequence_web_contact.default_controller:submitAction
+    methods: [POST]
+
 # Catch All: MUST be the last defined router
 axstrad_page:
     resource: '@AxstradPageBundle/Resources/config/routing.yml'
+
