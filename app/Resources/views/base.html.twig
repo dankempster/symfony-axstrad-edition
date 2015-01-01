@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html {{ sonata_seo_html_attributes() }}>
+    <head {{ sonata_seo_head_attributes() }}>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block title %}{{ sonata_seo_title() }}{% endblock %}
+
+        {% block metaTags %}{{ sonata_seo_metadatas() }}{% endblock %}
+
+        {{ sonata_seo_link_canonical() }}
+
         {% stylesheets
             'compiled/css/main.css'
         %}<link rel="stylesheet" type="text/css" href="{{ asset_url }}" />{% endstylesheets %}
         {% block stylesheets %}{% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            <h1>Symfony Axstrad Edition</h1>
+        </header>
+
+        <main>{% block body %}{% endblock %}</main>
+
+        <footer>
+            <p>&copy; 2015 Dan Kempster</p>
+        </footer>
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
