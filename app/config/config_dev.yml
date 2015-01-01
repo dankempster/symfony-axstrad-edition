@@ -9,7 +9,7 @@ framework:
 
 web_profiler:
     toolbar: true
-    intercept_redirects: false
+    intercept_redirects: %dev_intercept_redirect%
 
 monolog:
     handlers:
@@ -27,5 +27,5 @@ monolog:
 assetic:
     use_controller: true
 
-#swiftmailer:
-#    delivery_address: me@example.com
+swiftmailer:
+   delivery_address: %dev_email%
