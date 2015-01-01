@@ -20,6 +20,9 @@ class AppKernel extends Kernel
 
             // Our App
             new AppBundle\AppBundle(),
+
+            // Deployment tools
+            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
