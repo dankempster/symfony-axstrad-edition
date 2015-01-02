@@ -47,6 +47,7 @@
         <whitelist addUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">../src</directory>
             <exclude>
+                <directory>../src/AppBundle/Tests</directory>
                 <directory>../src/*/*Bundle/Resources</directory>
                 <directory>../src/*/*Bundle/Tests</directory>
                 <directory>../src/*/Bundle/*Bundle/Resources</directory>
