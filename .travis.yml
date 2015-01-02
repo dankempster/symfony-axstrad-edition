@@ -11,7 +11,7 @@ script:
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
-  - php ./vendor/bin/coveralls -v
+  - php vendor/satooshi/php-coveralls/composer/bin/coveralls -v
 matrix:
   include:
     # Build with PHP 5.5 and Symfony LTS
