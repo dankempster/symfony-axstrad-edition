@@ -18,7 +18,10 @@ framework:
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_proxies: ~
-    session:         ~
+    session:
+        name:            SAEPS
+        cookie_lifetime: 31536000 # One year
+        save_path:       "%kernel.root_dir%/data/sessions"
     fragments:       ~
     http_method_override: true
 
