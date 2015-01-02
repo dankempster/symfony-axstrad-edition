@@ -5,6 +5,7 @@
 /app/config/parameters.yml
 /app/logs/*
 /app/data/*
+/app/phpunit.xml
 !app/cache/.gitkeep
 !app/logs/.gitkeep
 !app/data/.gitkeep

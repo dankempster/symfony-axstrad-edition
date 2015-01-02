@@ -4,18 +4,13 @@ imports:
 framework:
     test: ~
     session:
-        storage_id: session.storage.mock_file
+        storage_id: session.storage.filesystem
     profiler:
-        collect: false
+        collect: true
 
 doctrine:
     dbal:
         driver:   pdo_sqlite
-        host:     ~
-        port:     ~
-        dbname:   ~
-        user:     ~
-        password: Z
         path:     "%kernel.root_dir%/data/test.db3"
 
 web_profiler:
@@ -24,3 +19,8 @@ web_profiler:
 
 swiftmailer:
     disable_delivery: true
+
+## LiipFunctionalTestBundle
+liip_functional_test:
+    cache_sqlite_db: true
+    query_count.max_query_count: 50
