@@ -22,6 +22,9 @@ class AppKernel extends Kernel
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Axstrad\Bundle\DoctrineExtensionsBundle\AxstradDoctrineExtensionsBundle(),
 
+            // Utility Bundles
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(), // Definition and Rendering of app menus
+
             // Seo Bundles
             new Sonata\SeoBundle\SonataSeoBundle(),
             new Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),

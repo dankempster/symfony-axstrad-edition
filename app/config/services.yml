@@ -1,3 +1,6 @@
+imports:
+    - { resource: services/menus.yml }
+
 parameters:
     frequence_web_contact.model.class: AppBundle\Entity\Contact
 

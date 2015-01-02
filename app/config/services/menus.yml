@@ -1,0 +1,50 @@
+## App Menus
+#
+# Contains all the menu's definitions for the application.
+#
+# Add New Menu:
+#     1. Add a new create..() method to AppBundle\Menu\MenuBuilder. See
+#        createMainMenu() for an example.
+#     2. Duplicate the 'app.menu.main' definition below to define your new
+#        menu.
+#     3. Use the menu in a template
+
+services:
+
+    ## The Menu Builder
+    #
+    # Add a method to this class to create a menu
+    app.menu_builder:
+        class: AppBundle\Menu\MenuBuilder
+        arguments: ["@knp_menu.factory"]
+        #
+        # Feel free to add your own services to the builder:
+        #
+        # calls:
+        #     - ["setMyService", [@my_service]]
+
+    ## Abstract Menu Defintition
+    #
+    # Extend this when defining your menu. Make sure to add 'scope: request' to
+    # your definition too.
+    app.menu.abstract:
+        abstract: true
+        class: Knp\Menu\MenuItem
+        factory_service: app.menu_builder
+        arguments: ["@request"]
+        scope: request
+
+
+
+    ##### MENUS
+
+    ## App's Main Menu
+    #
+    # Duplicate this defintiion to add a new menu
+    app.menu.main:
+        parent: app.menu.abstract
+        scope: request # Must be defined, it isn't inherited from parent.
+        factory_method: createMainMenu
+        tags:
+            - { name: knp_menu.menu, alias: main }
+

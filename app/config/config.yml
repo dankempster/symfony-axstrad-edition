@@ -125,3 +125,8 @@ frequence_web_contact:
     to:         %contact_to%          # The contact mail recipient
     from:       %contact_from%        # The contact mail sender
     subject:    %contact_subject% # The contact mail subject translation key
+
+## KnpMenuBundle
+knp_menu:
+    providers:
+        builder_alias: false # disable the builder-based provider, all out menus are services.
