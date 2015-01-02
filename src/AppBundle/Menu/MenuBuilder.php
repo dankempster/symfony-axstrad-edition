@@ -32,7 +32,7 @@ class MenuBuilder
 
         $root->addChild('home', array(
             'label' => 'Home',
-            'route' => 'app_home',
+            'route' => 'homepage',
         ));
         $root->addChild('about', array(
             'label' => 'About Us',

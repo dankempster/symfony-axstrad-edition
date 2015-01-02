@@ -48,7 +48,7 @@ class MainMenuTest extends WebTestCase
     {
         return array(
             // [ 'route-name', ['param' => 'value'] ],
-            ["app_home", [] ],
+            ["homepage", [] ],
             ['axstrad_page', array('slug' => 'about-us') ],
             ['fw_contact_index', [] ],
         );
